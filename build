@@ -65,6 +65,5 @@ docker buildx inspect --bootstrap
 docker buildx build \
   --platform "$(IFS=,; echo "${platforms[*]}")" \
   --push \
-  --output type=docker \
   -t "$USERNAME/$SERVICE:$VERSION" \
   "$repo_root/services/$SERVICE"
