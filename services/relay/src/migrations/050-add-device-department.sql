@@ -10,7 +10,7 @@ SELECT
   nodes.props->>'name' as name,
   nodes.props->>'uuid' as uuid,
   nodes.props->>'path' as path,
-  nodes.props->>'order' as 'order',
+  nodes.props->>'order' as "order",
   nodes.props->>'department' as department
 FROM
   nodes

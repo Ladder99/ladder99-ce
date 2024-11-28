@@ -8,7 +8,7 @@ create or replace function get_department_availability(
   in p_start bigint, -- start time in milliseconds since 1970-01-01
   in p_stop bigint -- stop time in milliseconds since 1970-01-01
 )
-returns table ('time' timestamptz, 'availability' float)
+returns table ("time" timestamptz, "availability" float)
 language plpgsql
 as
 $body$
